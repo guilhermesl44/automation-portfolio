@@ -54,6 +54,12 @@ Especialista em automação de processos com N8N, focado em transformar tarefas 
 | [🧾 Emissão de Boletos](https://github.com/guilhermesl44/n8n-emissao-boletos) | Automatiza a geração e envio de boletos bancários integrado ao sistema de gestão | N8N · API Interna · Evolution API | ⭐⭐ |
 | [🔄 Sincronização de Cobranças](https://github.com/guilhermesl44/n8n-sincronizacao-cobrancas) | Sincroniza dados de cobrança entre sistemas, eliminando atualizações manuais | N8N · API Interna · Google Sheets | ⭐⭐ |
 
+### 🎥 Criação de Conteúdo
+
+| Projeto | O que faz | Stack | Complexidade |
+|---------|-----------|-------|:---:|
+| [🧠 YouTube Trends Research System](https://github.com/guilhermesl44/youtube-trends-research-system) | Pipeline IA que analisa tendências do YouTube e gera ideias completas de conteúdo — título, roteiro e thumbnail | N8N · GPT-4o · YouTube · Google Sheets | ⭐⭐⭐⭐⭐ |
+
 ---
 
 ## 📊 Resultados & Métricas
@@ -112,3 +118,4 @@ Especialista em automação de processos com N8N, focado em transformar tarefas 
 <div align="center">
 <sub>Todos os workflows estão em produção · 2025</sub>
 </div>
+
