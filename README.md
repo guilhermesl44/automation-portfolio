@@ -8,7 +8,7 @@
 ![Google Sheets](https://img.shields.io/badge/Google_Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-**6 automações em produção · 3 áreas de negócio · IA integrada**
+**7 automações em produção · 4 áreas de negócio · IA integrada**
 
 </div>
 
@@ -20,14 +20,11 @@
 
 ## 📋 Sobre Mim
 
-Especialista em automação de processos com N8N, focado em transformar tarefas manuais e repetitivas em sistemas inteligentes que escalam. Trabalho com IA generativa, integração de APIs e lógica condicional avançada para resolver problemas reais de negócio nas áreas Comercial, Customer Success e Financeiro.
+Construo sistemas de automação que substituem trabalho manual por processos inteligentes e confiáveis — tanto para as empresas em que atuo internamente quanto para clientes externos.
 
-**Habilidades principais:**
-- Workflows complexos com múltiplos agentes de IA em cadeia
-- Integração de APIs REST e WebHooks
-- Automação de prospecção e follow-up via WhatsApp
-- Processamento e validação de dados em escala
-- Humanização de automações (delays adaptativos, personalização via IA)
+Meu foco não é só "ligar ferramentas". É entender o problema de negócio, mapear onde o processo quebra ou escala mal, e projetar workflows que funcionem em produção: com tratamento de erro, controle de estado, rate limiting e lógica que aguenta volume real.
+
+Os projetos aqui cobrem quatro áreas distintas: **Comercial** (prospecção com IA, raspagem de leads), **Customer Success** (follow-up automático baseado em status), **Financeiro** (cobrança bancária completa com API do Banco Inter, Redis, OAuth2 e webhooks) e **Criação de Conteúdo** (pipeline de inteligência de tendências do YouTube). Cada um resolveu um problema real, e está em produção.
 
 ---
 
@@ -50,9 +47,9 @@ Especialista em automação de processos com N8N, focado em transformar tarefas 
 
 | Projeto | O que faz | Stack | Complexidade |
 |---------|-----------|-------|:---:|
-| [💳 Cobrança de Atrasados](https://github.com/guilhermesl44/n8n-cobranca-atrasados) | Identifica clientes inadimplentes e dispara régua de cobrança automatizada via WhatsApp | N8N · Evolution API · API Interna | ⭐⭐ |
-| [🧾 Emissão de Boletos](https://github.com/guilhermesl44/n8n-emissao-boletos) | Automatiza a geração e envio de boletos bancários integrado ao sistema de gestão | N8N · API Interna · Evolution API | ⭐⭐ |
-| [🔄 Sincronização de Cobranças](https://github.com/guilhermesl44/n8n-sincronizacao-cobrancas) | Sincroniza dados de cobrança entre sistemas, eliminando atualizações manuais | N8N · API Interna · Google Sheets | ⭐⭐ |
+| [💳 Cobrança de Atrasados](https://github.com/guilhermesl44/n8n-cobranca-atrasados) | Identifica clientes inadimplentes e dispara régua de cobrança com 2ª via em PDF via email | N8N · Banco Inter API · Google Sheets · Gmail | ⭐⭐⭐⭐ |
+| [🧾 Emissão de Boletos](https://github.com/guilhermesl44/n8n-emissao-boletos) | Ciclo completo de cobrança recorrente: geração, envio, callbacks e atualização de status em tempo real | N8N · Banco Inter API · Redis · Google Sheets · Gmail | ⭐⭐⭐⭐⭐ |
+| [🔄 Sincronização de Cobranças](https://github.com/guilhermesl44/n8n-sincronizacao-cobrancas) | Sincroniza todas as cobranças do banco diariamente no Sheets — base para dashboards financeiros | N8N · Banco Inter API · Google Sheets | ⭐⭐⭐⭐ |
 
 ### 🎥 Criação de Conteúdo
 
@@ -89,11 +86,13 @@ Especialista em automação de processos com N8N, focado em transformar tarefas 
 | Tecnologia | Uso |
 |-----------|-----|
 | **N8N** | Plataforma de orquestração de todos os workflows |
-| **OpenAI GPT-4o-mini** | Agentes de IA para análise, personalização e geração de mensagens |
+| **OpenAI GPT-4o / 4o-mini** | Agentes de IA para análise, personalização e geração de conteúdo |
 | **Evolution API** | Envio e validação de mensagens via WhatsApp |
-| **Google Sheets** | Gestão de filas de leads e armazenamento de resultados |
+| **Banco Inter API** | Geração de boletos, callbacks de pagamento, PDF de cobranças |
+| **Redis** | Cache de tokens OAuth2 para evitar re-autenticação |
+| **Google Sheets** | Hub de dados, filas de leads e base para dashboards |
 | **SERPER API** | Buscas inteligentes no Google Search e Google Maps |
-| **APIs REST** | Integração com sistemas internos de gestão |
+| **Gmail API** | Envio de emails com templates HTML e anexos |
 | **JavaScript** | Expressões customizadas, delays aleatórios, manipulação de dados |
 
 ---
@@ -102,9 +101,10 @@ Especialista em automação de processos com N8N, focado em transformar tarefas 
 
 - **Chain of AI Agents** — múltiplos agentes em sequência, onde o output de um alimenta o próximo
 - **ETL com controle de estado** — Extract → Transform (IA) → Load, com deduplicação automática
+- **OAuth2 com token caching** — Redis elimina latência de re-autenticação em integrações bancárias
+- **Webhook handling** — callbacks assíncronos atualizam estado em tempo real
 - **Humanização de automações** — delays aleatórios e mensagens únicas que simulam comportamento humano
-- **Processamento em lote com retry** — loops controlados com tratamento de erro sem parar o workflow
-- **Status-based automation** — ações condicionais baseadas no estado do dado (CRÍTICO, HABILITADO, etc.)
+- **Status-based automation** — ações condicionais baseadas no estado do dado (CRÍTICO, ATRASADO, etc.)
 
 ---
 
@@ -118,4 +118,3 @@ Especialista em automação de processos com N8N, focado em transformar tarefas 
 <div align="center">
 <sub>Todos os workflows estão em produção · 2025</sub>
 </div>
-
