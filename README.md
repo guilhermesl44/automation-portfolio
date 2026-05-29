@@ -1,4 +1,4 @@
-﻿# 🤖 Automation Portfolio
+# 🤖 Automation Portfolio
 
 <div align="center">
 
@@ -8,7 +8,7 @@
 ![Google Sheets](https://img.shields.io/badge/Google_Sheets-34A853?style=for-the-badge&logo=google-sheets&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-**7 automações em produção · 4 áreas de negócio · IA integrada**
+**Automações em produção · IA integrada**
 
 </div>
 
@@ -20,11 +20,7 @@
 
 ## 📋 Sobre Mim
 
-Construo sistemas de automação que substituem trabalho manual por processos inteligentes e confiáveis — tanto para as empresas em que atuo internamente quanto para clientes externos.
-
-Meu foco não é só "ligar ferramentas". É entender o problema de negócio, mapear onde o processo quebra ou escala mal, e projetar workflows que funcionem em produção: com tratamento de erro, controle de estado, rate limiting e lógica que aguenta volume real.
-
-Os projetos aqui cobrem quatro áreas distintas: **Comercial** (prospecção com IA, raspagem de leads), **Customer Success** (follow-up automático baseado em status), **Financeiro** (cobrança bancária completa com API do Banco Inter, Redis, OAuth2 e webhooks) e **Criação de Conteúdo** (pipeline de inteligência de tendências do YouTube). Cada um resolveu um problema real, e está em produção.
+Construo sistemas de automação que substituem trabalho manual por processos inteligentes e confiáveis. Foco em entender o problema de negócio e projetar workflows que funcionam em produção — com tratamento de erro, controle de estado, rate limiting e lógica que aguenta volume real.
 
 ---
 
@@ -47,8 +43,8 @@ Os projetos aqui cobrem quatro áreas distintas: **Comercial** (prospecção com
 
 | Projeto | O que faz | Stack | Complexidade |
 |---------|-----------|-------|:---:|
-| [💳 Cobrança de Atrasados](https://github.com/guilhermesl44/n8n-cobranca-atrasados) | Identifica clientes inadimplentes e dispara régua de cobrança com 2ª via em PDF via email | N8N · Banco Inter API · Google Sheets · Gmail | ⭐⭐⭐⭐ |
-| [🧾 Emissão de Boletos](https://github.com/guilhermesl44/n8n-emissao-boletos) | Ciclo completo de cobrança recorrente: geração, envio, callbacks e atualização de status em tempo real | N8N · Banco Inter API · Redis · Google Sheets · Gmail | ⭐⭐⭐⭐⭐ |
+| [⚠️ Cobrança de Atrasados](https://github.com/guilhermesl44/n8n-cobranca-atrasados) | Identifica clientes inadimplentes e dispara régua de cobrança com 2ª via em PDF via email | N8N · Banco Inter API · Google Sheets · Gmail | ⭐⭐⭐⭐ |
+| [💳 Emissão de Boletos](https://github.com/guilhermesl44/n8n-emissao-boletos) | Ciclo completo de cobrança recorrente: geração, envio, callbacks e atualização de status em tempo real | N8N · Banco Inter API · Redis · Google Sheets · Gmail | ⭐⭐⭐⭐⭐ |
 | [🔄 Sincronização de Cobranças](https://github.com/guilhermesl44/n8n-sincronizacao-cobrancas) | Sincroniza todas as cobranças do banco diariamente no Sheets — base para dashboards financeiros | N8N · Banco Inter API · Google Sheets | ⭐⭐⭐⭐ |
 
 ### 🎥 Criação de Conteúdo
@@ -61,23 +57,15 @@ Os projetos aqui cobrem quatro áreas distintas: **Comercial** (prospecção com
 
 ## 📊 Resultados & Métricas
 
-### 🤖 Agente BDR com IA
-- **Problema resolvido:** Prospecção manual = horas por lead + mensagens genéricas com baixa resposta
-- **Resultado:** Mensagens personalizadas geradas em ~30s por lead; processo 100% automatizado
-- **Escala:** Processa dezenas de leads por execução, sem intervenção manual
-- **Diferencial:** Dois agentes de IA em cadeia (análise → criação) com delays humanizados de 10–15 min
-
-### 🔍 Raspagem de Leads Frios
-- **Problema resolvido:** Leads com WhatsApp inativo desperdiçavam tempo do time comercial
-- **Resultado:** Validação automática elimina números inválidos antes de qualquer abordagem
-- **Cobertura:** Busca simultânea em 2 fontes (web + Google Maps) por termo de pesquisa
-- **Output:** Lista pronta e validada no Google Sheets, sem retrabalho
-
-### 🚨 Follow-up de Clientes Críticos
-- **Problema resolvido:** Equipe de CS não conseguia acompanhar todos os clientes em dificuldade
-- **Resultado:** 100% dos clientes CRÍTICO recebem contato toda segunda-feira às 09:30, sem exceções
-- **Personalização:** Cada mensagem gerada por IA com nome e contexto do cliente
-- **Operação:** Notificação automática para a gestora ao concluir cada rodada
+| Projeto | Resultado-chave |
+|---------|----------------|
+| 🤖 Agente BDR com IA | Prospecção 100% automatizada — mensagem personalizada por IA em ~30s por lead |
+| 🔍 Raspagem de Leads Frios | Validação automática de WhatsApp antes do cadastro — zero números inválidos na fila |
+| 🚨 Follow-up de Clientes Críticos | 100% dos clientes CRÍTICO contatados toda segunda-feira às 09:30, sem exceção |
+| ⚠️ Cobrança de Atrasados | Follow-up de inadimplência 100% automático — 2ª via em PDF gerada e enviada por email |
+| 💳 Emissão de Boletos | Geração e envio de boletos 100% automático — zero intervenção manual na operação recorrente |
+| 🔄 Sincronização de Cobranças | Planilha atualizada diariamente às 08:10 — 120 dias de histórico sem limite de volume |
+| 🧠 YouTube Trends System | Pipeline completo: de dados brutos do YouTube a título + roteiro + thumbnail prontos |
 
 ---
 
@@ -116,5 +104,5 @@ Os projetos aqui cobrem quatro áreas distintas: **Comercial** (prospecção com
 ---
 
 <div align="center">
-<sub>Todos os workflows estão em produção · 2025</sub>
+<sub>Todos os workflows estão em produção · 2026</sub>
 </div>
