@@ -47,6 +47,12 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 | [💳 Emissão de Boletos](https://github.com/guilhermesl44/n8n-emissao-boletos) | Ciclo completo de cobrança recorrente: geração, envio, callbacks e atualização de status em tempo real | N8N · Banco Inter API · Redis · Google Sheets · Gmail | ⭐⭐⭐⭐⭐ |
 | [🔄 Sincronização de Cobranças](https://github.com/guilhermesl44/n8n-sincronizacao-cobrancas) | Sincroniza todas as cobranças do banco diariamente no Sheets — base para dashboards financeiros | N8N · Banco Inter API · Google Sheets | ⭐⭐⭐⭐ |
 
+### 🛒 E-commerce
+
+| Projeto | O que faz | Stack | Complexidade |
+|---------|-----------|-------|:---:|
+| [💳 Checkout Gateway](https://github.com/guilhermesl44/n8n-checkout-asaas) | Mini gateway completo: checkout com PIX + cartão, captura progressiva de leads e recuperação de carrinho abandonado | N8N · Asaas API · Google Sheets · Gmail · HTML/JS | ⭐⭐⭐⭐⭐ |
+
 ### 🎥 Criação de Conteúdo
 
 | Projeto | O que faz | Stack | Complexidade |
@@ -65,6 +71,7 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 | ⚠️ Cobrança de Atrasados | Follow-up de inadimplência 100% automático — 2ª via em PDF gerada e enviada por email |
 | 💳 Emissão de Boletos | Geração e envio de boletos 100% automático — zero intervenção manual na operação recorrente |
 | 🔄 Sincronização de Cobranças | Planilha atualizada diariamente às 08:10 — 120 dias de histórico sem limite de volume |
+| 💳 Checkout Gateway | PIX + cartão em produção — captura de lead desde o 1º campo, recuperação automática de carrinho |
 | 🧠 YouTube Trends System | Pipeline completo: de dados brutos do YouTube a título + roteiro + thumbnail prontos |
 
 ---
@@ -77,6 +84,7 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 | **OpenAI GPT-4o / 4o-mini** | Agentes de IA para análise, personalização e geração de conteúdo |
 | **Evolution API** | Envio e validação de mensagens via WhatsApp |
 | **Banco Inter API** | Geração de boletos, callbacks de pagamento, PDF de cobranças |
+| **Asaas API** | PIX dinâmico, cobrança de cartão, consulta de status de pagamento |
 | **Redis** | Cache de tokens OAuth2 para evitar re-autenticação |
 | **Google Sheets** | Hub de dados, filas de leads e base para dashboards |
 | **SERPER API** | Buscas inteligentes no Google Search e Google Maps |
@@ -93,6 +101,7 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 - **Webhook handling** — callbacks assíncronos atualizam estado em tempo real
 - **Humanização de automações** — delays aleatórios e mensagens únicas que simulam comportamento humano
 - **Status-based automation** — ações condicionais baseadas no estado do dado (CRÍTICO, ATRASADO, etc.)
+- **Progressive lead capture** — upsert por email enriquece a mesma linha a cada evento do usuário
 
 ---
 
