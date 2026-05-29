@@ -20,7 +20,7 @@
 
 ## 📋 Sobre Mim
 
-Especialista em automação de processos com N8N, focado em transformar tarefas manuais e repetitivas em sistemas inteligentes que escalam. Trabalho com IA generativa (GPT-4o), integração de APIs e lógica condicional avançada para resolver problemas reais de negócio nas áreas Comercial, Customer Success e Financeiro.
+Especialista em automação de processos com N8N, focado em transformar tarefas manuais e repetitivas em sistemas inteligentes que escalam. Trabalho com IA generativa, integração de APIs e lógica condicional avançada para resolver problemas reais de negócio nas áreas Comercial, Customer Success e Financeiro.
 
 **Habilidades principais:**
 - Workflows complexos com múltiplos agentes de IA em cadeia
