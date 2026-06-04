@@ -20,7 +20,7 @@
 
 ## 📋 Sobre Mim
 
-Construo sistemas de automação que substituem trabalho manual por processos inteligentes e confiáveis. Foco em entender o problema de negócio e projetar workflows que funcionam em produção — com tratamento de erro, controle de estado, rate limiting e lógica que aguenta volume real.
+Construo sistemas de automação que substituem trabalho manual por processos inteligentes e confiáveis. Foco em entender o problema de negócio e projetar workflows que funcionam em produção — com tratamento de erro, controle de estado e lógica que aguenta volume real.
 
 ---
 
@@ -32,6 +32,7 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 |---------|-----------|-------|:---:|
 | [🤖 Agente BDR com IA](https://github.com/guilhermesl44/n8n-agente-bdr-ia) | Analisa site + Instagram de leads e envia mensagens de prospecção hiper-personalizadas via WhatsApp | N8N · GPT-4o-mini · Evolution API · Google Sheets | ⭐⭐ |
 | [🔍 Raspagem de Leads Frios](https://github.com/guilhermesl44/n8n-raspagem-leads) | Busca leads no Google/Maps via IA e valida automaticamente se o WhatsApp existe antes de salvar | N8N · GPT-4o-mini · SERPER API · Evolution API · Google Sheets | ⭐⭐ |
+| [📲 WhatsApp Lead Parser](https://github.com/guilhermesl44/n8n-whatsapp-lead-parser) | Converte conversas de WhatsApp em leads estruturados no HubSpot — buffer Redis, regex com validação algorítmica, suporte a áudio/imagem e escalada para humano | N8N · Evolution API · Redis · OpenAI · HubSpot | ⭐⭐⭐⭐⭐ |
 
 ### 🤝 Customer Success
 
@@ -53,6 +54,12 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 |---------|-----------|-------|:---:|
 | [💳 Checkout Gateway](https://github.com/guilhermesl44/n8n-checkout-asaas) | Mini gateway completo: checkout com PIX + cartão, captura progressiva de leads e recuperação de carrinho abandonado | N8N · Asaas API · Google Sheets · Gmail · HTML/JS | ⭐⭐⭐⭐⭐ |
 
+### 🔧 Infraestrutura
+
+| Projeto | O que faz | Stack | Complexidade |
+|---------|-----------|-------|:---:|
+| [🔥 WhatsApp Chip Warming](https://github.com/guilhermesl44/n8n-whatsapp-chip-warming) | Aquece chips WhatsApp novos simulando conversas orgânicas e serve como simulador de cenários para testes de automações de atendimento — interface web completa servida pelo próprio n8n | N8N · Evolution API · Redis · HTML/JS | ⭐⭐⭐⭐⭐ |
+
 ### 🎥 Criação de Conteúdo
 
 | Projeto | O que faz | Stack | Complexidade |
@@ -67,11 +74,13 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 |---------|----------------|
 | 🤖 Agente BDR com IA | Prospecção 100% automatizada — mensagem personalizada por IA em ~30s por lead |
 | 🔍 Raspagem de Leads Frios | Validação automática de WhatsApp antes do cadastro — zero números inválidos na fila |
+| 📲 WhatsApp Lead Parser | ~80% dos leads cadastrados no HubSpot sem intervenção humana — regex resolve dados estruturados sem custo de IA |
 | 🚨 Follow-up de Clientes Críticos | 100% dos clientes CRÍTICO contatados toda segunda-feira às 09:30, sem exceção |
 | ⚠️ Cobrança de Atrasados | Follow-up de inadimplência 100% automático — 2ª via em PDF gerada e enviada por email |
 | 💳 Emissão de Boletos | Geração e envio de boletos 100% automático — zero intervenção manual na operação recorrente |
 | 🔄 Sincronização de Cobranças | Planilha atualizada diariamente às 08:10 — 120 dias de histórico sem limite de volume |
 | 💳 Checkout Gateway | PIX + cartão em produção — captura de lead desde o 1º campo, recuperação automática de carrinho |
+| 🔥 Chip Warming | Interface web + loop autônomo no ar — chips aquecendo com cadência aleatória e alternância de remetente |
 | 🧠 YouTube Trends System | Pipeline completo: de dados brutos do YouTube a título + roteiro + thumbnail prontos |
 
 ---
@@ -85,11 +94,12 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 | **Evolution API** | Envio e validação de mensagens via WhatsApp |
 | **Banco Inter API** | Geração de boletos, callbacks de pagamento, PDF de cobranças |
 | **Asaas API** | PIX dinâmico, cobrança de cartão, consulta de status de pagamento |
-| **Redis** | Cache de tokens OAuth2 para evitar re-autenticação |
+| **HubSpot CRM** | Upsert de contatos e deals via API |
+| **Redis** | Cache de tokens OAuth2 e buffer de mensagens por conversa |
 | **Google Sheets** | Hub de dados, filas de leads e base para dashboards |
 | **SERPER API** | Buscas inteligentes no Google Search e Google Maps |
 | **Gmail API** | Envio de emails com templates HTML e anexos |
-| **JavaScript** | Expressões customizadas, delays aleatórios, manipulação de dados |
+| **JavaScript** | Regex com validação algorítmica, delays aleatórios, manipulação de dados |
 
 ---
 
@@ -102,6 +112,8 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 - **Humanização de automações** — delays aleatórios e mensagens únicas que simulam comportamento humano
 - **Status-based automation** — ações condicionais baseadas no estado do dado (CRÍTICO, ATRASADO, etc.)
 - **Progressive lead capture** — upsert por email enriquece a mesma linha a cada evento do usuário
+- **Inactivity buffer pattern** — Redis acumula mensagens por conversa; processamento dispara só quando a conversa esfria
+- **SPA embutida em webhook** — interface web completa servida como string no Response Body, sem infraestrutura de front-end separada
 
 ---
 
