@@ -90,7 +90,7 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 | Tecnologia | Uso |
 |-----------|-----|
 | **N8N** | Plataforma de orquestração de todos os workflows |
-| **OpenAI GPT-4o / 4o-mini** | Agentes de IA para análise, personalização e geração de conteúdo |
+| **OpenAI  / Anthropic** | Agentes de IA para análise, personalização e geração de conteúdo |
 | **Evolution API** | Envio e validação de mensagens via WhatsApp |
 | **Banco Inter API** | Geração de boletos, callbacks de pagamento, PDF de cobranças |
 | **Asaas API** | PIX dinâmico, cobrança de cartão, consulta de status de pagamento |
