@@ -32,13 +32,13 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 |---------|-----------|-------|:---:|
 | [🤖 Agente BDR com IA](https://github.com/guilhermesl44/n8n-agente-bdr-ia) | Analisa site + Instagram de leads e envia mensagens de prospecção hiper-personalizadas via WhatsApp | N8N · GPT-4o-mini · Evolution API · Google Sheets | ⭐⭐ |
 | [🔍 Raspagem de Leads Frios](https://github.com/guilhermesl44/n8n-raspagem-leads) | Busca leads no Google/Maps via IA e valida automaticamente se o WhatsApp existe antes de salvar | N8N · GPT-4o-mini · SERPER API · Evolution API · Google Sheets | ⭐⭐ |
-| [📲 WhatsApp Lead Parser](https://github.com/guilhermesl44/n8n-whatsapp-lead-parser) | Converte conversas de WhatsApp em leads estruturados no HubSpot — buffer Redis, regex com validação algorítmica, suporte a áudio/imagem e escalada para humano | N8N · Evolution API · Redis · OpenAI · HubSpot | ⭐⭐⭐⭐⭐ |
+| [📲 WhatsApp Lead Parser](https://github.com/guilhermesl44/n8n-whatsapp-lead-parser) | Converte conversas de WhatsApp em leads estruturados no HubSpot — buffer Redis, regex com validação algorítmica, suporte a áudio/imagem e escalada para humano | N8N · Evolution API · Redis · OpenAI · HubSpot | ⭐⭐⭐ |
 
 ### 🤝 Customer Success
 
 | Projeto | O que faz | Stack | Complexidade |
 |---------|-----------|-------|:---:|
-| [🚨 Follow-up de Clientes Críticos](https://github.com/guilhermesl44/n8n-followup-criticos) | Detecta semanalmente clientes com status CRÍTICO na implantação e envia mensagens de suporte personalizadas por IA | N8N · GPT-4o-mini · Evolution API · API Interna | ⭐⭐ |
+| [🚨 Follow-up de Clientes Críticos](https://github.com/guilhermesl44/n8n-followup-criticos) | Detecta semanalmente clientes com status CRÍTICO na implantação e envia mensagens de suporte personalizadas por IA | N8N · GPT-4o-mini · Evolution API · API Interna | ⭐ |
 
 ### 💰 Financeiro
 
