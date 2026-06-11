@@ -38,7 +38,7 @@ Construo sistemas de automação que substituem trabalho manual por processos in
 
 | Projeto | O que faz | Stack | Complexidade |
 |---------|-----------|-------|:---:|
-| [🚨 Follow-up de Clientes Críticos](https://github.com/guilhermesl44/n8n-followup-criticos) | Detecta semanalmente clientes com status CRÍTICO na implantação e envia mensagens de suporte personalizadas por IA | N8N · GPT-4o-mini · Evolution API · API Interna | ⭐ |
+| [🚨 Follow-up de Clientes Críticos](https://github.com/guilhermesl44/n8n-followup-criticos) | Detecta semanalmente clientes com status CRÍTICO na implantação e envia mensagens de suporte personalizadas por IA | N8N · GPT-4o-mini · Evolution API · API Interna | ⭐ ⭐|
 
 ### 💰 Financeiro
 
